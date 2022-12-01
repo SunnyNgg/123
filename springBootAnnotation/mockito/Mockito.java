@@ -1,5 +1,6 @@
 package springBootAnnotation.mockito;
 // E.g
+public class Mockito {
 @Autowired
 MockMvc mockMvc;
 
@@ -13,4 +14,5 @@ void testFindAllBooks() throws Exception{
     .andDo(print())
     .andExpect(status().isOk())
     .andReturn();
+  }
 //.andExpect(jsonPath("$[0].bookName").value("Tommy's Books"))
